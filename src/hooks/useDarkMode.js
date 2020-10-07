@@ -3,9 +3,9 @@ import {useState} from 'react';
 
 const useDarkMode = (key, initialValue) => {
 
-    const [value, setValue] = useLocalStorage(key, initialValue);
+    const [darkMode, setDarkMode] = useLocalStorage(key, initialValue);
 
-    return [value, setValue];
+    return [darkMode, setDarkMode];
 };
 
 export default useDarkMode;
